@@ -1,9 +1,110 @@
-html {
-  box-sizing: border-box;
+@import "vars";
+@import "global";
+@import "fonts";
+
+// HEADER
+
+.header__top {
+  background-color: $grey;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  align-items: center;
 }
+
+.header__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__button {
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  padding: 14px 18px;
+  background-color: $blue;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+}
+
+.user__pic {
+  border-radius: 50%;
+  margin: 0px 20px 0px 30px;
+}
+
+.user__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.user__name {
+  font-family: 'Quicksand-Medium', sans-serif;
+  color: $black;
+  font-size: 16px;
+}
+
+.user__balance {
+  color: $blue;
+  font-size: 15px;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  padding: 25px 0px;
+  font-family: 'Quicksand-Medium', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  margin-right: 33px;
+}
+
+.menu__link {
+  color: $black;
+}
+
+.header__form {
+  display: inline;
+}
+
+.header__input {
+  width: 360px;
+  border-radius: 20px;
+  border: 1px solid $light-grey;
+  padding: 14px 100px 14px 25px;
+  position: relative;
+  }
+
+.search__btn {
+  background-color: $blue;
+  border: none;
+  width: 70px;
+  height: 48px;
+  border-radius: 20px;
+  position: absolute;
+  right: 370px;
+}
+
+
+
